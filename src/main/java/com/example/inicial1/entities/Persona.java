@@ -3,6 +3,7 @@ package com.example.inicial1.entities;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
+import org.hibernate.envers.Audited;
 
 @Entity
 @AllArgsConstructor
@@ -11,6 +12,7 @@ import lombok.experimental.SuperBuilder;
 @Getter
 @ToString
 @Builder
+@Audited
 public class Persona {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
